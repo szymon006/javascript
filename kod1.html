@@ -1,0 +1,76 @@
+
+<html>
+<head>
+
+</head>
+
+<body>
+
+<textarea name="nazwa" cols="500" rows="60" disabled>
+<html>
+<head>
+<title> zadanie 1 </title>
+<script language="JavaScript">
+function WinOpen_markowski()
+{
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_markowski(' ')">
+</form>
+</body>
+</html>
+
+****************************************************************************************************************
+
+<html>
+<head>
+<script language="JavaScript">
+function WinOpen_markowski()
+{
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+}
+
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<img src="obraz.gif" alt="a" width="200" height="100">
+<br>
+a)Uwagi na temat JS<br>
+<br>
+-kiedy powstał -> powstał w 1995 roku<br>
+<br>
+-dlaczego jest to język skryptowy -> jest on interpretowany, kod jest wykonywany od góry do dołu i wynik jest zwracany natychmiastowo<br>
+<br>
+-gdzie jest wykonywany JS (klient lub serwer)-> po stronie klienta<br>
+<br>
+-dlaczego jest to bezpieczne narzędzie -> JavaScript ma pewne ograniczenia, takie jak uniemożliwienie odczytu i zapisu na dysku oraz uniemożliwianie dostępu do innych okien lub domen przeglądarki<br>
+<br>
+-czy jest to język obiektowy , jeśli tak to dlaczego. -> Java to obiektowy język programowania, a JavaScript to obiektowy język skryptowy. Aplikacje w języku Java działają w maszynie wirtualnej lub w przeglądarce, a kod JavaScript jest uruchamiany wyłącznie w przeglądarkach<br>
+<br>
+b &lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo; -> kod tworszy przycisk, który przy jednokrotnym kliknięciu otworzy stronę o nazwie "nowa strona"
+<br>
+ window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");  <br>
+toolbar=no ->ukrywa standardowy pasek narzędzi<br>
+directories=no, ->ukrywa przyciski katalogów<br>
+menubar=no, ->ukrywa menu przeglądarki<br>
+height=280, ->wartość w pixelach-ustawia wysokość okna<br>
+width=160, ->wartość w pixelach-ustawia szerokość okna<br>
+top=200, ->wartość w pixelach : ustawia położenie okna względem góry ekranu<br>
+left=200 ->wartość w pixelach : ustawia położenie okna względem lewej strony ekranu<br>
+<br>
+window.close() -> zamyka okno<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/> <br>
+</body>
+</html>
+</textarea>
+
+</body>
+</html>
