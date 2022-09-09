@@ -1,0 +1,64 @@
+<html>
+<head>
+<script language="JavaScript">
+function WinOpen_markowski()
+{
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+}
+
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+
+<b>Rodzaje okienek: </b><br>
+1. Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK,<br>
+2. Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu.<br>
+3. Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).<br>
+<br>
+<br>
+<br>
+<b>Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</b><br>
+<br>
+1. Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".<br>
+<u>Poprawne nazwy zmiennych</u>: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br>
+<u>Błędne nazwy zmiennych</u>: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.<br>
+<br>
+2. Wielkość liter ma znaczenie.<br>
+<u>Rekord i rekord</u> to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.<br>
+<br>
+3. Należy nie używać słów kluczowych JavaScript jako nazw zmiennych<br>
+<br>
+<br>
+<br>
+<b>Typy zmiennych w Javascript</b><br>
+<br>
+W JavaScript nie ma możliwości definiowania różnych typów zmiennych tak jak w C++, typy zmiennych są definiowane w trakcie ich przypisywania.<br>
+Podstawowe zmienne liczbowe w JavaScript to:<br>
+<br>
+Number -> Typ liczbowy<br>
+1. zmienna całkowite<br>
+2. zmiennoprzecinkowe<br>
+<br>
+String -> Typ tekstowy<br>
+Boolea -> Typ logiczny<br>
+Null -> Pusta zawartość<br>
+Undefined -> Typ niezidentyfikowany<br>
+Object -> Obiekt<br>
+<br>
+<br>
+<br>
+<b>Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków<b> dlatego konieczna jest<br>
+konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia.<br>
+parseFloat(zmienna) - konwersja zmiennej do typu float<br>
+parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego)<br>
+toString(zmienna) - konwersja zmiennej do typu łańcuchowego<br>
+
+
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/> <br>
+</body>
+</html>
