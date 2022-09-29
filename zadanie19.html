@@ -1,0 +1,50 @@
+<html> 
+<head> 
+<title>
+ Przykład obliczenia Obw i Pc prostokata
+</title>
+ <script language="JavaScript">
+function pc_mar(a_mar,b_mar)
+{
+ a_mar_liczba=parseFloat(a_mar)
+ b_mar_liczba=parseFloat(b_mar)
+ pc_mar_wynik=a_mar*b_mar
+ document.getElementsByName('obj')[0].value=pc_mar_wynik.toFixed(2); /* na dokument */
+ alert("Pc="+pc_mar_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="Pc="+pc_mar_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obw_mar(a_mar,b_mar)
+{
+ a_mar_liczba=parseFloat(a_mar)
+ b_mar_liczba=parseFloat(b_mar)
+19
+obw_mar_wynik=2*a_mar+2*b_mar
+ document.getElementsByName('pole')[0].value=obw_mar_wynik.toFixed(2);
+ alert("Obw="+obw_mar_wynik.toFixed(2)+" cm");
+ pokaz2.innerHTML="Obw="+obw_mar_wynik.toFixed(2)+"cm";
+}
+ </script>
+</head> 
+<body> 
+Obliczanie Obw i Pc prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="pc_mar(this.boka_mar.value,this.bokb_mar.value); 
+obw_mar(this.boka_mar.value,this.bokb_mar.value);return false"> 
+ Podaj a=
+ <input size="6" name="boka_mar">
+ Podaj b=
+ <input size="6" name="bokb_mar">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+Pc=
+ <input size="6" name="obj">
+Obw=
+ <input size="6" name="pole">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
