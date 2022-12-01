@@ -1,0 +1,34 @@
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+
+ var p_mar=prompt("podaj pierwsza liczbe z przedzialu <20,60>","");
+ var d_mar=prompt("podaj druga liczbe z przedzialu <20,60>","");
+
+ var pocz_mar;
+ var tekst_mar="markowski szymon";
+ var zwiek_mar;
+ var i;
+ 
+  var a_mar=parseFloat(p_mar);
+  var b_mar=parseFloat(d_mar);
+
+  if(p_mar>60 || d_mar>60 || p_mar<20 || d_mar<20)
+  document.write("zle wartosci");
+ 
+  
+  if(p_mar<d_mar) {
+  for(i=p_mar;i<d_mar;i++){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_mar+"<br></p>")
+}
+}
+  if(d_mar<p_mar) {
+  for(i=p_mar;i>d_mar;i--){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_mar+"<br></p>")
+}
+}
+ </script>
+</div>
+</body>
+</html>
