@@ -1,0 +1,31 @@
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+
+var r_mar=prompt("Podaj r","");
+var r_mar=parseFloat(r_mar);
+var i;
+var k;
+var ile;
+ile=0;
+
+
+  for(i=-r_mar;i<=r_mar;i++)
+  {
+  for(k=-r_mar;k<=r_mar;k++)
+  {
+document.write("("+i+","+k+")");
+ile++;
+  }
+document.write("<br>");
+  }
+
+  
+document.write("Ilość punktów kratowych:"+ile+"");
+
+  
+ </script>
+</div>
+</body>
+</html>
