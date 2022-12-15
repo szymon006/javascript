@@ -1,0 +1,40 @@
+
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+
+ var p_mar=prompt("podaj pierwsza liczbe","");
+ var d_mar=prompt("podaj druga liczbe","");
+
+ var pocz_mar;
+ var tekst_mar="markowski szymon";
+ var zwiek_mar;
+ var i;
+ 
+  var a_mar=parseFloat(p_mar);
+  var b_mar=parseFloat(d_mar);
+
+ 
+  
+  if(p_mar<d_mar) {
+  for(i=p_mar;i<d_mar;i++){
+  if(i % 2 == 0){
+document.write("<p style=\"font-size:40px; color: green;\"><br>"+i+"<br></p>")
+}
+}
+}
+  if(p_mar>d_mar) {
+  for(i=p_mar;i>d_mar;i--){
+  if(i % 2 == 0){
+document.write("<p style=\"font-size:20px; color: blue;\"><br>"+i+"<br></p>")
+}
+}
+}
+if(p_mar==d_mar)
+document.write("brak rozwiazan")
+
+ </script>
+</div>
+</body>
+</html>
